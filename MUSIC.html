@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>SIMPLE MUSIC WEBSITE</title>
+        <link rel="stylesheet" href=styles.css>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="IMAGES/muisclogo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">GENRES</a></li>
+                    <li><a href="#">SPECIFICATIONS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <h1>WELCOME TO MY MUSIC WORLD</h1>
+            </div>
+            <div class="right-column">
+                <p>Click Here To Get Into <br>The Magical World Of Music</br></p>
+                <img src="IMAGES/play.jpg" class="play" id="icon">
+            </div>
+        </div>
+        <audio id="mySong">
+            <source src="Imagine Dragons - Believer.mp3" type="audio/mp3">
+        </audio>
+        <script type="text/javascript">
+           var Mysong=document.getElementById("mySong");
+           var icon=document.getElementById("icon");
+           icon.onclick=function(){
+               if(mySong.paused){
+                   mySong.play();
+                   icon.src="Images/pause.jpg";
+               }
+               else{
+                   mySong.pause();
+                   icon.src="Images/play.jpg";
+               }
+           }
+        </script>
+        <br>
+        <div class="Sign-Up">
+            <div class=container-1>
+            <h1>SIGN-UP</h1>
+            <br><h3>Free and Make your journey awesome!!!</h3></br>
+            <form>
+                <label>First Name</label>
+                <input type="text" placeholder="XYZ">
+                <label>Last Name</label>
+                <input type="text" placeholder="A">
+                <label>Email Id</label>
+                <input type="email" placeholder="abc@gmail.com">
+                <label>Password</label>
+                <input type="password" placeholder="@xyz123">
+                <label>Re-Confirm Password</label>
+                <input type="password" placeholder="@xyz123">
+                <input type="button" value="Sign-Up">
+            </form>
+            <p>By clicking,you agree to our <br><a href="#">Terms And Conditions</a> and <a href="#">Privacy Policy</a></p>
+        </div>
+        <p class=paragraph>Already have an Account??? <a href="login.html">Login</a></p>
+       </div>
+    </br>
+        </body>
+</html>
